@@ -1,5 +1,7 @@
 //ABC177_A late
 
+############################
+
 import Foundation
 
 guard let input = readLine() else {
@@ -21,3 +23,27 @@ if D <= T * S {
 } else {
     print("No")
 }
+
+############################
+
+let dts = readLine()!.split(separator: " ").map{ Int($0)! }
+let d = dts[0]
+let t = dts[1]
+let s = dts[2]
+print(d<=t*s ? "Yes" : "No")
+
+############################
+
+let readValue: String = readLine()!
+let line1 = readValue.split(separator: " ")
+
+let d = Int(line1[0])!
+let t = Int(line1[1])!
+let s = Int(line1[2])!
+if s * t >= d {
+    print("Yes")
+} else {
+    print("No")
+}
+
+############################
